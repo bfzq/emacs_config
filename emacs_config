@@ -1,7 +1,7 @@
 (setq exec-path (cons "/usr/local/bin" exec-path))
 (require 'package)
 (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
- ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+  ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize) ;; You might already have this line
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 ;; 总是自动安装不存在的包
@@ -26,9 +26,9 @@
 ;; ================插件
 ;; c++ 额外配色处理
 (use-package modern-cpp-font-lock
- :ensure t
- :config 
- (modern-c++-font-lock-global-mode t))
+  :ensure t
+  :config 
+  (modern-c++-font-lock-global-mode t))
 ;; dash 调用快捷键
 (use-package dash-at-point
   :ensure t
@@ -49,6 +49,19 @@
   :hook
   ((c-mode . ggtags-mode)
     (c++-mode . ggtags-mode)))
+
+(use-package company-c-headers
+  :ensure t
+  :config
+  (add-to-list 'company-backends 'company-c-headers))
+
+(use-package company
+  :ensure t
+  :config
+  (setq company-minimum-prefix-length 3)
+  :hook
+  (after-init . global-company-mode))
+; (ac-clang-flag)
 
 (use-package google-c-style
   :ensure nil
