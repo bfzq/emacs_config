@@ -4,6 +4,7 @@
   ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize) ;; You might already have this line
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/theme/")
 ;; 总是自动安装不存在的包
 ;; (setq use-package-always-ensure t)
 ;; 隐藏菜单栏
@@ -77,11 +78,17 @@
   (interactive)
   (mapc 'kill-buffer (cdr (buffer-list (current-buffer)))))
 
+(load-theme 'green-256)
+;; (enable-theme 'aalto-dark)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("a696f6bdb9d6ee819b74326bb60f886612b971e153e2a4f6dd87312a682ee771" "17d34138152e99507601d7e2b08efc665500cdd8e81ea2085384477e72743820" "854c688c0ef46bd3e9450cedfa80dd3e03cb1b7b3776e9d4a39f8fc3f3250f15" "d85ceb3a81ebbb4af6a52351871f6bf96558d2a357a59f8c443397039f6c3a25" "afefe292e4844b5736cd3a0103512b0608843b1d96d8b9f48bee09138ad44d8d" "48de05d685c9bd61da2c3ab9d1e27b29a4e5d225aa155b3f7443de8138b80590" "8247550000d3a3bb21483e89a472fc37728a80105a973fa0a7fe87dac6365903" "dafbc966cd01386b4c3a707bd5b5fb1a00589f5d8f849650aa0a9e998d95f9cb" default)))
  '(package-selected-packages
    (quote
     (modern-cpp-font-lock use-package ggtags dash-at-point dark-mint-theme company auto-complete)))
