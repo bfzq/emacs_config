@@ -5,10 +5,10 @@
 (custom-theme-set-faces
  'green-256
 
- '(default ((t (:background "#B4EEB4" :foreground "black"))))
- '(mouse ((t (:foregound "#B4EEB4"))))
- '(fringe ((t (:background "#B4EEB4" :foreground "black"))))
- '(border ((t (:foregound "#B4EEB4"))))
+ '(default ((t (:background "#B4FFB4" :foreground "black"))))
+ '(mouse ((t (:foregound "#B4FFB4"))))
+ '(fringe ((t (:background "#B4FFB4" :foreground "black"))))
+ '(border ((t (:foregound "#B4FFB4"))))
 
 
  '(mode-line ((t (:background "#111111" :foreground "deep pink"))))
@@ -31,13 +31,13 @@
  '(secondary-selection ((t (:background "dodger blue"))))
 
  '(mouse ((t (:foregound "wheat"))))
- '(highlight ((t (:background "#B4FFB4"))))
+ '(highlight ((t (:background "#98F688"))))
  '(header-line ((t (:background "#111111"))))
  '(show-paren-match-face ((t (:background "turquoise" :foreground "coral"))))
  '(show-paren-mismatch-face ((t (:background "purple" :foreground "white"))))
  '(cursor ((t (:background "white")))))
 
- '(linum ((t (:background "#B4EEB4" :foreground "black"))))
+ '(linum ((t (:background "#B4FFB4" :foreground "black"))))
 
 ;;;###autoload
 (when load-file-name
