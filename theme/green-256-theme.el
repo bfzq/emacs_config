@@ -27,11 +27,11 @@
  '(whitespace-space ((t (:foreground "#333333"))))
  '(whitespace-tab ((t (:foreground "#333333"))))
 
- '(region ((t (:background "#78bb55"))))
+ '(region ((t (:background "#78BB55"))))
  '(secondary-selection ((t (:background "dodger blue"))))
 
  '(mouse ((t (:foregound "wheat"))))
- '(highlight ((t (:background "#98F688"))))
+ '(highlight ((t (:background "#CCFFCC"))))
  '(header-line ((t (:background "#111111"))))
  '(show-paren-match-face ((t (:background "turquoise" :foreground "coral"))))
  '(show-paren-mismatch-face ((t (:background "purple" :foreground "white"))))
