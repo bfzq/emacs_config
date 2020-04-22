@@ -27,7 +27,7 @@
  '(whitespace-space ((t (:foreground "#333333"))))
  '(whitespace-tab ((t (:foreground "#333333"))))
 
- '(region ((t (:background "#78BB55"))))
+ '(region ((t (:background "#EEFFAA"))))
  '(secondary-selection ((t (:background "dodger blue"))))
 
  '(mouse ((t (:foregound "wheat"))))
