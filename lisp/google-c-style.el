@@ -121,7 +121,7 @@ Suitable for inclusion in `c-offsets-alist'."
 ;                          ,(when (fboundp 'c-lineup-assignments)
 ;                             'c-lineup-assignments)
 ;                          +))
-                        (label . /)
+                        (label . 2)
                         (case-label . 0)
                         (statement-case-open . 0)
                         (statement-case-intro . +) ; case w/o {
