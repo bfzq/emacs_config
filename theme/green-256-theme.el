@@ -32,7 +32,7 @@
 
  '(mouse ((t (:foregound "wheat"))))
  '(highlight ((t (:background "#CCFFCC"))))
- '(header-line ((t (:background "#111111"))))
+ '(header-line ((t (:background "#CCFFCC"))))
  '(show-paren-match-face ((t (:background "turquoise" :foreground "coral"))))
  '(show-paren-mismatch-face ((t (:background "purple" :foreground "white"))))
  '(cursor ((t (:background "white")))))
