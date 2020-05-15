@@ -39,11 +39,11 @@
   :config 
   (modern-c++-font-lock-global-mode t))
 ;; c++ 额外配色处理
-(use-package modern-cpp-font-lock
-  :ensure t
-  :config 
-  ;; 环境变量
-  (exec-path-from-shell-initialize))
+; (use-package modern-cpp-font-lock
+;   :ensure t
+;   :config 
+;   ;; 环境变量
+;   (exec-path-from-shell-initialize))
 ;; dash 调用快捷键
 (use-package dash-at-point
   :ensure t
@@ -94,3 +94,17 @@
 
 (load-theme 'green-256 t)
 ;; (enable-theme 'aalto-dark)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (exec-path-from-shell use-package modern-cpp-font-lock ggtags dash-at-point company-c-headers))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
